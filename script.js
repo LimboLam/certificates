@@ -1,15 +1,14 @@
-const myImage = document.getElementById(`certificates`);
-const button = document.getElementById(`button`);
+const certificate = document.getElementById(`certificates`);
+const button = document.querySelector(`button`);
 
 function changeImage() {
-    button.addEventListener(`click`, () => {
-        const mySrc = myImage.getAttribute(`src`);
-        if (mySrc === `images/certificate_1.png`) {
-          myImage.setAttribute(`src", "images/certificate_2.png`);
-        } else if (mySrc === `images/certificate_2.png`) {
-          myImage.setAttribute(`src`, `images/certificate_3.png`);
+    button.addEventListener(`click`, function() {
+        if (certificate.src === `images/certificate_1.png`) {
+          certificate.src = `images/certificate_2.png`;
+        } else if (certificate.src === `images/certificate_2.png`) {
+            certificate.src = `images/certificate_3.png`;
         } else {
-            myImage.setAttribute(`src`, `images/certificate_3.png`)
+            certificate.src = `images/certificate_1.png`;
         }
     });
 }
