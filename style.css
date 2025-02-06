@@ -1,11 +1,17 @@
-div {
+img {
     display: flex;
-    justify-content: center;
-    align-content: center;
-    border: 1px black solid;
+    justify-self: center;
+    align-self: center;
+    border: 1px hsl(0, 0%, 0%) solid;
 }
 button {
     display: flex;
-    justify-content: center;
+    justify-self: flex-end;
     align-self: flex-end;
+    width: 5vw;
+    height: 5vh;
+}
+#name {
+    top: ;
+    right: ;
 }
