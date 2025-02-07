@@ -3,6 +3,7 @@ const buttonImg = document.getElementById(`changeImg`);
 const buttonName = document.getElementById(`changeName`);
 const dateButton = document.getElementById(`dateButton`);
 const buttonSpecialName = document.getElementById(`changeSpecialName`);
+const buttonFitText = document.getElementById(`fitText`);
 
 function changeImage() {
     let image = certificate.getAttribute(`src`);
@@ -13,12 +14,6 @@ function changeImage() {
     } else {
         certificate.setAttribute(`src`, `images/certificate_1.png`);
     }
-
-    
-    if (image === `images/certificate_2.png`) {
-        document.getElementById(specialName).style.visibility = `hidden`;
-        document.getElementById(companyName).style.visibility = `hidden`;
-}
 }
 
 buttonImg.addEventListener(`click`, function() {
@@ -55,4 +50,15 @@ function changeSpecialName() {
 
 buttonSpecialName.addEventListener(`click`, function() {
     changeSpecialName();
+});
+
+function fitText() {
+    if (image === `images/certificate_2.png`) {
+        document.getElementById(`specialName`).style.visibility = `hidden`;
+        document.getElementById(`companyName`).style.visibility = `hidden`;
+    }
+}
+
+buttonFitText.addEventListener(`click`, function() {
+    fitText();
 });
