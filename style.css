@@ -1,17 +1,148 @@
+/*Fonts*/
+
+/* Libre Bodoni Regular
+font-family: "libre-bodoni", sans-serif;
+font-weight: 400;
+font-style: normal; */
+
+/* Libre Bodoni Bold
+font-family: "libre-bodoni", sans-serif;
+font-weight: 700;
+font-style: normal; */
+
+/* Libre Caslon Display Regular
+font-family: "libre-caslon-display", sans-serif;
+font-weight: 400;
+font-style: normal; */
+
+/* Linden Hill Regular
+font-family: "linden-hill", serif;
+font-weight: 400;
+font-style: normal; */
+
+/* Inknut Antiqua Regular
+font-family: "inknut-antiqua", sans-serif;
+font-weight: 400;
+font-style: normal; */
+
+/* Inknut Antiqua Bold
+font-family: "inknut-antiqua", sans-serif;
+font-weight: 700;
+font-style: normal; */
+
+/* Looking Flowers Script
+font-family: "looking-flowers-script", sans-serif;
+font-weight: 400;
+font-style: normal; */
+
 img {
     display: flex;
     justify-self: center;
     align-self: center;
     border: 1px hsl(0, 0%, 0%) solid;
 }
-button {
-    display: flex;
-    justify-self: flex-end;
-    align-self: flex-end;
-    width: 5vw;
-    height: 5vh;
+
+#buttons {
+    position: absolute;
+    top: 50vh;
+    width: 14vw;
 }
+
+.button {
+    height: 7vh;
+    width: 10vw;
+    font-size: 1.25em;
+    margin-bottom: 2%;
+}
+
+#bigName {
+    position: absolute;
+    top: 17vh;
+    right: 71vh;
+    font-family: "libre-bodoni", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5em;
+    text-align: center;
+}
+
+#certificateName {
+    position: absolute;
+    font-family: "libre-bodoni", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    top: 30vh;
+    width: 99%;
+    font-size: 2em;
+    text-align: center;
+}
+
+#awardingText {
+    position: absolute;
+    font-family: "libre-caslon-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    top: 39vh;
+    width: 99%;
+    font-size: 2em;
+    text-align: center;
+}
+
 #name {
-    top: ;
-    right: ;
+    position: absolute;
+    font-family: "libre-bodoni", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    top: 55vh;
+    width: 99%;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+#date {
+    position: absolute;
+    font-family: "libre-caslon-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    bottom: 12vh;
+    left: 29.5vw;
+    font-size: 1.5em;
+}
+
+#sayDate {
+    position: absolute;
+    font-family: "libre-caslon-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    bottom: 7vh;
+    left: 31vw;
+    font-size: 2em;
+}
+
+#specialName {
+    position: absolute;
+    right: 23vw;
+    bottom: 12vh;
+    font-size: 2em;
+    font-family: "libre-caslon-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 20.2%;
+    text-align: center;
+}
+
+#companyName {
+    position: absolute;
+    right: 28.5vw;
+    bottom: 7vh;
+    font-size: 2em;
+    font-family: "libre-caslon-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media print {
+    button {
+        display: none;
+    }
 }
